@@ -10,7 +10,7 @@
         }
     },
     "persist": [
-        "save_data",
+        "save_data"
     ],
     "bin": "rgsm.exe",
     "shortcuts": [
