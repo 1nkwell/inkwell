@@ -22,14 +22,14 @@
         "content"
     ],
     "checkver": {
-        "url": "https://github.com/xiaoyifang/goldendict/releases",
-        "regex": "download/v(?<release>[\\w-.]+)/GoldenDict-ng-(?<version>[\\d.]+)-Qt(?<qt>[\\d.]+)\\.7z"
+        "url": "https://github.com/xiaoyifang/goldendict/releases/download/",
+        "regex": "v(?<release>[\\w-.]+)/GoldenDict-ng-(?<version>[\\d.]+)-Qt(?<qt>[\\d.]+)-Windows-installer\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ghfast.top/github.com/xiaoyifang/goldendict/releases/download/v$release/GoldenDict-ng-$version-Qt$qt.7z",
-                "extract_dir": "GoldenDict-ng-$version-Qt$qt"
+                "url": "https://ghfast.top/github.com/xiaoyifang/goldendict/releases/download/v$release/GoldenDict-ng-$version-Qt$qt-Windows-installer.7z",
+                "extract_dir": "$version-Qt$qt"
             }
         },
         "hash": {
