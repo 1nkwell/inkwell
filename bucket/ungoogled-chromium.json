@@ -15,7 +15,13 @@
             "extract_dir": "ungoogled-chromium_138.0.7204.96-1.1_windows_x86"
         }
     },
-    "bin": "chrome.exe",
+    "bin": [
+        [
+            "chrome.exe",
+            "Chromium",
+            "--user-data-dir=$persist_dir\\User_Data"
+        ]
+    ],
     "shortcuts": [
         [
             "chrome.exe",
